@@ -15,7 +15,7 @@ app.get('/api-endpoint', function(request, response) {
             creditCheckResult: {blacklist: true, overdue: true, inservicemrt: true},
         };
     
-    response.setHeader('Access-Control-Allow-Origin','*');
+    response.setHeader('Access-Control-Allow-Origin','*'); 
     response.send(JSON.parse(JSON.stringify(jsonContent)));
     
 });
